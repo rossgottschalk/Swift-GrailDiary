@@ -82,7 +82,7 @@ class PlayerTableViewController: UITableViewController
             let selectedCell = sender as! UITableViewCell
             let indexPath = tableView.indexPath(for: selectedCell)
             let selectedPlayer = players[(indexPath?.row)!]
-            detailVC.
+            detailVC.player = selectedPlayer
         }
     }
     
