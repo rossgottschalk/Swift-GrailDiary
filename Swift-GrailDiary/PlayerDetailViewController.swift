@@ -17,22 +17,26 @@ class PlayerDetailViewController: UIViewController
     
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var teamImage: UIImageView!
-    var player: PlayerClass!
+    var player: PlayerClass?
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        nameLabel.text = player.name
-        positionLabel.text = player.position
-        teamLabel.text = player.team
-        statsLabel.text = player.stats
+        nameLabel.text = player?.name
+        positionLabel.text = player?.position
+        teamLabel.text = player?.team
+        statsLabel.text = player?.stats
         
-        playerImage.image = UIImage(named: "\(player.picture).png")
+        
+        
+        playerImage.image = UIImage(named: "\(player?.picture)")//.png")
+        
         //Kawhi Leonard's image doesn't show. Thus causing compiling errors
         
-        teamImage.image = UIImage(named: "\(player.teamLogo).gif")
-        teamImage.image = UIImage(named: "\(player.teamLogo).png")
+        teamImage.image = UIImage(named: "\(player?.teamLogo)")//.gif")
+        //teamImage.image = UIImage(named: "\(player?.teamLogo).png")
+        
 
         
         

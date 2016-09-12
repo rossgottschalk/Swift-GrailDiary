@@ -41,12 +41,12 @@
         "accolades": "ORTG:111.7 | DRTG:104.9 | PER 28.16 | eFG% .448"
   },
   {
-		"name": "Kawhi Leonard",
+		"name": "Paul George",
 		"position": "SF",
-		"team": "San Antonio Spurs",
-        "picture": "kawhi.png",
-        "teamLogo": "spurs.gif",
-        "accolades": "ORTG:121.5 | DRTG:95.6 | PER 25.88 | eFG% .565"
+		"team": "Indiana Pacers",
+        "picture": "george.png",
+        "teamLogo": "pacers.gif",
+        "accolades": "ORTG:106.0 | DRTG:101.0 | PER 20.9 | eFG% .490"
   },
   {
 		"name": "Damian Lillard",
