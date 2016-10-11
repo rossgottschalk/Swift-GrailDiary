@@ -27,22 +27,8 @@ class PlayerDetailViewController: UIViewController
         positionLabel.text = player?.position
         teamLabel.text = player?.team
         statsLabel.text = player?.stats
-        
-        
-        
-        playerImage.image = UIImage(named: "\(player?.picture)")//.png")
-        
-        //Kawhi Leonard's image doesn't show. Thus causing compiling errors
-        
-        teamImage.image = UIImage(named: "\(player?.teamLogo)")//.gif")
-        //teamImage.image = UIImage(named: "\(player?.teamLogo).png")
-        
-
-        
-        
-        
-
-        // Do any additional setup after loading the view.
+        playerImage.image = UIImage(named: (player?.picture)!)
+        teamImage.image = UIImage(named: (player?.teamLogo)!)
     }
 
     override func didReceiveMemoryWarning() {
